@@ -68,7 +68,7 @@ if (message.content === prefix +'help') {
 .setThumbnail(message.author.avatarURL)
 .setDescription (`
 :globe_with_meridians:─══════ {✯الاوامر العامه✯} ══════─
-『${prefix}id / (معلومات عن حسابك (يظهر بشكل صورة』
+『${prefix}**id / (معلومات عن حسابك (يظهر بشكل صورة』
 『${prefix}id2 / (معلومات عن حسابك (يظهر بشكل كتابي』
 『${prefix}server / معلومات عن السيرفر』
 『${prefix}user / لمعرفة متى دخلت الدسكورد والسيرفر』
