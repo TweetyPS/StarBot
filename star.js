@@ -411,7 +411,7 @@ const xNiTRoZ = new Discord.RichEmbed()
 .addField(":busts_in_silhouette: الاعضاء " + ` ${message.guild.memberCount} `,"Online "+`[ ${message.guild.members.filter(m=>m.presence.status == "online","idle","dnd").size} ]`+ ","+"Offline "+`[ ${message.guild.members.filter(m=>m.presence.status == "offline").size} ]`,true)
 .addField(":speech_balloon: قنوات" +" "+message.guild.channels.size+" ",`Text [ ${message.guild.channels.filter(m => m.type === "text").size} ]`+", "+`Voice [ ${message.guild.channels.filter(m => m.type === "voice").size} ]`,true)
 .addField(":earth_asia: الدوله",message.guild.region)
-.addField(":ribbon: ايموجي السيرفر",`${message.guild.emojis.size}`,true).addField(":construction: مستوى التحقق",`${verificationLevels[message.guild.verificationLevel]}`,true).addField("🏆 الرتب  "+message.guild.roles.size+" ","Type`=roles` To See The Server Roles!")
+.addField(":ribbon: ايموجي السيرفر",`${message.guild.emojis.size}`,true).addField(":construction: مستوى التحقق",`${verificationLevels[message.guild.verificationLevel]}`,true).addField("🏆 الرتب  "+message.guild.roles.size+" ","Type`!roles` To See The Server Roles!")
  message.channel.send({embed:xNiTRoZ});
   console.log('[server] Send By: ' + message.author.username)
 }
