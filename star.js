@@ -4205,7 +4205,8 @@ client.on('message',async Epic => {
     setInterval(() => {
       c.setName(` Online :  ${Epic.guild.members.filter(m => m.voiceChannel).size} .`)
     },1000);
-  });
+  }
+});
 client.on("ready", function() {
 	console.log("ready");
 	
