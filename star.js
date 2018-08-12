@@ -8,6 +8,13 @@ const jimp = require("jimp");
 ///////////////////////////////////////////////
 const prefix = "!";
 ///////////////////////////////////////////////
+client.on("ready", function() {
+	console.log("ready");
+	
+	client.user.setStatus("dnd");
+	client.user.setGame("To Get Help | !help");
+});
+///////////////////////////////////////////////
 const moment = require('moment');
 const Discord = require("discord.js");
 const client = new Discord.Client();
@@ -4190,11 +4197,5 @@ client.users.forEach(m =>{
 m.sendMessage(args)
 })
 }
-});
-client.on("ready", function() {
-	console.log("ready");
-	
-	client.user.setStatus("dnd");
-	client.user.setGame("To Get Help | !help");
 });
 client.login(process.env.BOT_TOKEN);
