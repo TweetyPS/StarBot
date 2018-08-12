@@ -8,16 +8,15 @@ const jimp = require("jimp");
 ///////////////////////////////////////////////
 const prefix = "!";
 ///////////////////////////////////////////////
+const moment = require('moment');
+const Discord = require("discord.js");
+const client = new Discord.Client();
 client.on("ready", function() {
 	console.log("ready");
 	
 	client.user.setStatus("dnd");
 	client.user.setGame("To Get Help | !help");
 });
-///////////////////////////////////////////////
-const moment = require('moment');
-const Discord = require("discord.js");
-const client = new Discord.Client();
 client.on('ready', () => {
   console.log('-----------------')
   console.log(`${client.user.username} is online`);
