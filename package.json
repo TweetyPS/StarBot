@@ -1,34 +1,16 @@
 {
-  "name": "Test",
-  "description": "The Best Bot",
-  "version": "1.0.0",
+  "//1": "describes your app and its dependencies",
+  "//2": "https://docs.npmjs.com/files/package.json",
+  "//3": "updating this file will download and update your packages",
+  "name": "hello-express",
+  "version": "0.0.1",
+  "description": "A simple Node app built on Express, instantly up and running.",
   "main": "star.js",
   "scripts": {
     "start": "node star.js"
   },
-  "engines": {
-    "node": "12.x"
-      },
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/then/fs.git"
-  },
-  "keywords": [
-    "promise",
-    "then",
-    "fs",
-    "core"
-  ],
-  "author": "Nathan Zadoks",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/then/fs/issues"
-  },
-  "devDependencies": {
-    "bash-color": "0.0.4"
-  },
   "dependencies": {
-    "canvas": "^2.6.1",
+     "canvas": "^2.6.1",
     "dateformat": "^3.0.3",
     "discord.js": "^12.0.2",
     "ffmpeg-binaries": "^4.0.0",
@@ -62,5 +44,19 @@
     "giphy-api": "^2.0.1",
     "express": "^4.17.1",
     "superagent": "^5.2.2"
-  }
+  },
+  "engines": {
+    "node": "12.x"
+  },
+  "repository": {
+    "url": "https://github.com/then/fs/issues"
+  },
+  "license": "MIT",
+  "keywords": [
+    "node",
+    "promise",
+    "then",
+    "fs",
+    "core"
+  ]
 }
