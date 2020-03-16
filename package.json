@@ -3,10 +3,12 @@
   "description": "The Best Bot",
   "version": "1.0.0",
   "main": "star.js",
-  "node": "12.16.x",
   "scripts": {
     "start": "node star.js"
   },
+  "engines": {
+    "node": "12.x"
+      },
   "repository": {
     "type": "git",
     "url": "git://github.com/then/fs.git"
